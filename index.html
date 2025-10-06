@@ -2,15 +2,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>____Calculator</title>        
+        <title>Shape Selector</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-
     <body>
         <main>
-
+            <label for="select-measurement">Choose a measurement:
+                <select id="select-measurement" name="measurement" selected="default-area">
+                    <option value="default-measurement" id="default-measurement"></option>
+                    <option value="area">area</option>
+                    <option value="circumference">circumference</option>
+                    <option value="volume">volume</option>
+                    <option value="surfaceArea">surface area</option>
+                </select>
+            </label>
+                       
+            <label for="select-shape">
+                Choose a shape:
+                <select id="select-shape" name="shape">
+            <!-- input dropdown for list of shapes that has it-->
+                </select>
+            </label>
         </main>
+        <footer>
+            <!-- Put results here with input and shape and go back button -->
+        </footer>
+        <script src="scripts.js" type="module"></script>
     </body>
-
-</html>kklksdfsdf
+</html>
