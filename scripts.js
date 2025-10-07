@@ -16,7 +16,7 @@ const displayShapes = shapes => {
     shapeDropdown.innerHTML = selectShape
 }
 
-// Gets arguments and parameters needed to display inputs
+// Gets arguments and parameters needed to display shapes
 document.body.addEventListener('change', (e) => {
     if (e.target.matches('#select-measurement')) {
         const measurement = e.target.value
