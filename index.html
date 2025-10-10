@@ -2,35 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Shape Selector</title>
+        <title>Shape Calculator</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <main>
-            <!-- NOT SURE WHERE TO PUT FORM ELEMENT, MOST LIKELY ON THIS LINE TO AFTER FIELDSET-->
-            <label for="select-measurement">Choose a measurement:
-                <select id="select-measurement" name="measurement" selected="default-area">
-                    <option value="default-measurement" id="default-measurement"></option>
-                    <option value="area">area</option>
-                    <option value="circumference">circumference</option>
-                    <option value="volume">volume</option>
-                    <option value="surfaceArea">surface area</option>
-                </select>
-            </label>
-                       
-            <label for="select-shape">
-                Choose a shape:
-                <select id="select-shape" name="shape">
-                    <!-- input dropdown for list of shapes that has it-->
-                </select>
-            </label>
-            <fieldset id="input-values">
-                <!-- inputs for all variable values needed -->
-            </fieldset>
-        </main>
-        <footer>
-            <!--YET TO DO: Put results here-->
-        </footer>
+        <div id="container">
+            <main>
+                <form>
+                    <!-- NOT SURE WHERE TO PUT FORM ELEMENT, MOST LIKELY ON THIS LINE TO AFTER FIELDSET-->
+                    <label for="select-measurement">Choose a measurement:
+                        <select id="select-measurement" name="measurement" selected="default-area">
+                            <option value="default-measurement" id="default-measurement" disabled selected>Select a measurement</option>
+                            <option value="area">area</option>
+                            <option value="circumference">circumference</option>
+                            <option value="volume">volume</option>
+                            <option value="surfaceArea">surface area</option>
+                        </select>
+                    </label>
+                            
+                    <label for="select-shape">
+                        Choose a shape:
+                        <select id="select-shape" name="shape">
+                            <option value="default-shape" name="default-shape" disabled selected>Choose a shape</option>
+                            <!-- POPULATED DYNAMICALLY: input dropdown for list of shapes that has it -->
+                        </select>
+                    </label>
+
+                    <fieldset id="input-values" hidden>
+                        <!-- POPULATED DYNAMICALLY (UNHIDES THEN): inputs for all variable values needed -->
+                    </fieldset>
+
+                    <input id="reset-form" type="submit" value="Reset Values">
+                </form>
+            </main>
+
+            <footer id="show-result" hidden>
+                <!--YET TO DO: Put results here-->
+            </footer>   
+        </div>
+
+        <script src="data.js" type="module"></script>
         <script src="scripts.js" type="module"></script>
     </body>
 </html>
