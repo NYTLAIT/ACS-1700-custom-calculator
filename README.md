@@ -34,15 +34,3 @@ A simple, interactive, and scalable **geometry calculator** that dynamically dis
 4. Click **Calculate** to see the result displayed instantly.
 
 Formulas are defined in [`formulas.js`](./formulas.js) and dynamically accessed by [`scripts.js`](./scripts.js).
-
----
-
-## Project Structure
-
-shape-calculator/
-│
-├── index.html # HTML structure and form layout
-├── styles.css # Styling and responsive design
-├── main.js # Core app logic (dynamic updates & calculations)
-└── formulas.js # Contains all mathematical formulas and variables
-
