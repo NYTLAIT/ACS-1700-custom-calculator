@@ -39,6 +39,7 @@ Formulas are defined in [`formulas.js`](./formulas.js) and dynamically accessed 
 
 ## Improvements That Can Be Implemented
 
-- Con of being dynamically populated is that names can sound weird and stiff with them being pulled exactly like in the `formulas.js` which does not allow spaces
-- No units
-- No formula shown
+- Con of being dynamically populated is that names can sound weird and stiff by being shown exactly like in the `formulas.js` which does not allow spaces.
+- There are no units.
+- There are no formulas shown.
+- Can enter values that are not numbers. To makes matters worse, there is no fyi that says, so when inputting units, user may just get confused.
