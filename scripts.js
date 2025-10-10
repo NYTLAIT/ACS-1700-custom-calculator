@@ -22,16 +22,12 @@ document.body.addEventListener('change', (e) => {
 
         if (measurement === 'area') {
             shapes = ['parallelogram', 'triangle', 'trapezoid', 'circle']
-            background = 
         } else if (measurement === 'circumference') {
             shapes = ['circle']
-            background = 
         } else if (measurement === 'volume') {
             shapes = ['circular-cylinder', 'sphere', 'circular-cone', 'pyramid']
-            background = 
         } else if (measurement === 'surfaceArea') {
             shapes = ['circular-cylinder', 'sphere']
-            background = 
         }
 
         displayShapes(shapes)
