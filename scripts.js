@@ -1,4 +1,4 @@
-import formulas from './data.js'
+import formulas from './formulas.js'
 
 const measurementDropdown = document.querySelector('#select-measurement')
 const shapeDropdown = document.querySelector('#select-shape')

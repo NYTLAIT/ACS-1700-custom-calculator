@@ -33,7 +33,7 @@ A simple, interactive, and scalable **geometry calculator** that dynamically dis
 3. Enter the required **values** (like base, height, or radius).  
 4. Click **Calculate** to see the result displayed instantly.
 
-Formulas are defined in [`formulas.js`](./formulas.js) and dynamically accessed by [`main.js`](./main.js).
+Formulas are defined in [`formulas.js`](./formulas.js) and dynamically accessed by [`scripts.js`](./scripts.js).
 
 ---
 
