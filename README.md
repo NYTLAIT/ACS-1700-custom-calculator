@@ -34,3 +34,11 @@ A simple, interactive, and scalable **geometry calculator** that dynamically dis
 4. Click **Calculate** to see the result displayed instantly.
 
 Formulas are defined in [`formulas.js`](./formulas.js) and dynamically accessed by [`scripts.js`](./scripts.js).
+
+---
+
+## Improvements That Can Be Implemented
+
+- Con of being dynamically populated is that names can sound weird and stiff with them being pulled exactly like in the `formulas.js` which does not allow spaces
+- No units
+- No formula shown
